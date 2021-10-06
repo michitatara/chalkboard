@@ -14,3 +14,6 @@
 
 #### The following 4 pictures are Mez's work
 ## The first picture is Mez's Site Map concept.
+![Screenshot (115)](https://user-images.githubusercontent.com/83977892/136295553-bea6584f-efb6-4755-8a41-547ce1f598be.png)
+## The next three pictures compose a handwritten version of Mez's wireframe. 
+The first picture is a mockup for user type: Student.
