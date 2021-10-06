@@ -16,4 +16,13 @@
 ## The first picture is Mez's Site Map concept.
 ![Screenshot (115)](https://user-images.githubusercontent.com/83977892/136295553-bea6584f-efb6-4755-8a41-547ce1f598be.png)
 ## The next three pictures compose a handwritten version of Mez's wireframe. 
-The first picture is a mockup for user type: Student.
+#### The first picture is a mockup for user type: Student.
+![IMG-4989](https://user-images.githubusercontent.com/83977892/136295989-a6e19f79-2600-4af8-8f7d-2d5de6c2271d.jpg)
+#### The second picture is a mockup for user type: Teacher.
+![IMG-4990](https://user-images.githubusercontent.com/83977892/136296074-a05cb0bf-81ec-4d11-a9e4-60f04cebf1ea.jpg)
+#### The third picture is a mockup for user type: Admin. 
+![IMG-4991](https://user-images.githubusercontent.com/83977892/136296097-7b1609e9-9910-44e8-9551-34c83c9280b0.jpg)
+###### My contributions to this readme are also the first four pictures which portray a possible design of our chalkboard site. I learned many things from this assignment. I learned how to style a readme and how to host images on GitHub. I used the website Lucidchart to design my sitemap and learned more about wireframing. Ultimately, I was able to learn more how websites are put together and the planning that goes into it. 
+##### This concludes Mez's portion
+
+
