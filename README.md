@@ -12,3 +12,5 @@
 ###### My contributions to this readme are the first four pictures which portray a possible mockup of the chalkboard site. What I learned from this assignment is how to style a readme. I learned how to use markdown language and how to upload images to the github readme using instances. I also learned how to use a digital tool to create sitemaps and I have begun to understand how websites should flow together. Lastly, I also learned about wireframing. 
 ##### This concluded Michelle's portion. If any picture is unclear, please let Michelle know.
 
+#### The following 4 pictures are Mez's work
+## The first picture is Mez's Site Map concept.
