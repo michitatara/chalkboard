@@ -1,8 +1,10 @@
 # chalkboard
+#### The following is a revised,digital version of our sitemap which we will be basing all future versions of our code off of
+![WireframeChalkboard](https://user-images.githubusercontent.com/59904212/138448638-ebb90eaf-d78a-43c4-a58c-bd9c9566e511.jpg)
 #### The following 4 pictures are michelle's work. 
-## The first picture is Michelle's Site Map concept. 
+#### The first picture is Michelle's Site Map concept. 
 ![sitemapdraft2](https://user-images.githubusercontent.com/59904212/135747813-50c0cb7c-fdf8-4d14-af52-de7f1d3b9c06.jpg)
-## The next three pictures compose a handwritten version of Michelle's wireframe. 
+#### The next three pictures compose a handwritten version of Michelle's wireframe. 
 The three pictures are divided by the different query possibilites for three different types of users. The first picture is a mockup for user type: teacher.
 ![wireframeteacher](https://user-images.githubusercontent.com/59904212/135747938-b2a4d064-04c6-4197-b5f8-9b2897fb9c1c.jpg)
 The second picture is a mockup for user type:student.
@@ -13,9 +15,9 @@ My contributions to this readme are the first four pictures which portray a poss
 This concluded Michelle's portion. If any picture is unclear, please let Michelle know.
 
 #### The following 4 pictures are Mez's work
-## The first picture is Mez's Site Map concept.
+#### The first picture is Mez's Site Map concept.
 ![Screenshot (115)](https://user-images.githubusercontent.com/83977892/136295553-bea6584f-efb6-4755-8a41-547ce1f598be.png)
-## The next three pictures compose a handwritten version of Mez's wireframe. 
+#### The next three pictures compose a handwritten version of Mez's wireframe. 
 The first picture is a mockup for user type: Student.
 ![IMG-4989](https://user-images.githubusercontent.com/83977892/136295989-a6e19f79-2600-4af8-8f7d-2d5de6c2271d.jpg)
 The second picture is a mockup for user type: Teacher.
