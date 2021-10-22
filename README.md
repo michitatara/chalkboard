@@ -1,6 +1,7 @@
 # chalkboard
 #### The following is a revised,digital version of our sitemap which we will be basing all future versions of our code off of
 ![chalkwirepart1](https://user-images.githubusercontent.com/59904212/138456799-7ccc740f-c18e-4689-bad7-597c16d161e0.jpg)
+![chalkwirepart2](https://user-images.githubusercontent.com/59904212/138456993-e8bce0eb-b64e-48a9-b234-4881622c7d00.jpg)
 #### The following 4 pictures are michelle's work. 
 #### The first picture is Michelle's Site Map concept. 
 ![sitemapdraft2](https://user-images.githubusercontent.com/59904212/135747813-50c0cb7c-fdf8-4d14-af52-de7f1d3b9c06.jpg)
