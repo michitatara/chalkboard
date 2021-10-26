@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Homepage Upon Login</title>
+</head>
+<body>
+<main>
+    <header>
+        <div class="topnav">
+            <a href="StudentHomepage.html"><input type="image" id="image" alt="Logo" src="chalkboardlogo.jpg" width="10%" height="10%"></a>
+            <input type="text" placeholder="Search..">
+        </div>
+    </header>
+    <section class="list-classes">
+        <div class="content-wrap item-details divider">
+            <h2>All of My Classes:</h2>
+            <p>Click on a class to see class info, current assignments, and more!</p>
+
+            <section class="list-item">
+                <img src="studentstudy.jfif" alt="studentstudy">
+                <div class="unique-item">
+                    <p>Math Class 253</p>
+                    <p>English Class 300</p>
+                    <p>History Class 325</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div class="content-wrap">
+            <ul>
+                <li>King's College              12345@email.com</li>
+                <li>100 St.</li>
+                <li>Ave Z.</li>
+                <li>New York,NY 00001</li>
+                <li>(000)-(111)-(2222)</li>
+                <li>&copy 2021</li>
+            </ul>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
