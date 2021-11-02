@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teacher Homepage Upon Login</title>
-    <h1>Welcome Teacher!</h1>
-</head>
-<body>
-<main>
+
     <header>
         <div class="topnav">
             <a href="TeacherHomepage.html"><input type="image" id="image" alt="Logo" src="chalkboardlogo.jpg" width="20%" height="20%"></a>
             <input type="text" placeholder="Search..">
         </div>
     </header>
+</head>
+<body>
+<main>
+    <h1>Welcome Teacher!</h1>
     <section class="list-classes">
         <div class="content-wrap item-details divider">
             <h2>All of My Classes:</h2>
@@ -22,12 +23,21 @@
             <section class="list-item">
                 <img src="apple.png" alt="apple">
                 <div class="unique-item">
-                    <p>Math Class 253</p>
+                    <a href="TeacherCertainClass.html"><p>Math Class 253</p></a>
                     <p>English Class 300</p>
                     <p>History Class 325</p>
+                    <p><a href="CreateClass.html"><input type="button" value="Create new course"></a></p>
                 </div>
             </section>
         </div>
+
+            <a href="CertainAssignment.html"><p>View submitted Assignments</p></a>
+
+            <section class="approval-list">
+                <a href="PendingApplications.html"> View Pending Applications </a>
+            </section>
+
+
     </section>
     <footer>
         <div class="content-wrap">
