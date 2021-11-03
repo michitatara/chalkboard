@@ -1,11 +1,11 @@
 # chalkboard
 #### Team Members: Mezbahuddin Prottoy & Michelle Tatara
 #### Navigating our Website.
-Student View:
+#### Student View:
 So you first land on the sign/in and sign up page. Currently, there are three buttons for the three different paths in our website. There are:StudentView,TeacherView,and AdminView. For student, when you click the button, it will land you on the student homepage. On the homepage, you have the option to view your current classes and enroll in a class. When you click on a current class, you can view the assignment for that class.When you click on the assignment, you can save the assignment or come back to it. When you enroll in the class, you can read the class description and see who is teaching the course. Later on, we will allow to search classes using the searchbar but right now we have a preloaded class on you can try enrolling in the StudentHomepage.
-Teacher View:
+#### Teacher View:
 For teacher, when you click the button, it will land you on the teacher homepage. You can see the courses you are currently teaching, there is the option to create a new course, view any submitted assignments, and view any pending applications from students. When you click on a certain course you are teaching, you have the option to create a new assignment for the course. When you click on creating a new course, you input the information about the course into a form. When you click on a certain assignment to grade, you can view the assignment submitted by students and submit the final grade. For the pending applications from students, it shows the list of students that are trying to enroll and for which class. 
-Admin View:
+#### Admin View:
 For admin, when you click the button, it will land you to the admin homepage. Admin view is iimited because much of it requires receiving data from the database. Admins are able to see list of available classes, teachers, and students. They are also able to see past search history. For past search history, we created a page with sample data. Wherever in the pages says, "hyperlink!!!", it means when we have actual data to connect to, we will link it to there with a hyperlink. 
 When you click on the logo, it directs you back to the respective homepage of the respective user. 
 #### The following is a revised,digital version of our sitemap which we will be basing all future versions of our code off of
