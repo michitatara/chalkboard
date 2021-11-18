@@ -11,6 +11,9 @@ header{
     padding: 0;
 }
 
+.topnav{
+    background: #49c1a2;
+}
 
 .signup-box {
     width: 360px;
@@ -75,7 +78,7 @@ p {
     text-align: center;
     color: white;
     font-size: 15px;
-    margin-top: -10px;
+    margin-top: 10px;
 
 }
 .para-2 a {
@@ -88,6 +91,6 @@ p {
 footer{
     background: #49c1a2;
     color: #F7FFF7;
-    margin:0;
+    margin-bottom: -15px;
     padding: 0;
 }
