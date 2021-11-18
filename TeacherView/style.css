@@ -1,0 +1,82 @@
+body{
+    background-color: #344a72;
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    padding: 0;
+}
+header{
+    text-align: left;
+    color:white;
+    margin:0;
+    padding: 0;
+}
+
+.topnav{
+    background: #49c1a2;
+}
+/* TeacherHomepage */
+.list-classes{
+    width: 360px;
+    height: 300px;
+    text-align: left;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.graded-assignments{
+    width: 360px;
+    height: 100px;
+    text-align: left;
+    background-color: white;
+    border-radius: 3px;
+
+}
+
+/*TeacherCertainClass */
+.math-class{
+    background: #4682B4;
+    margin-top: -20px;
+    margin-bottom: -15px;
+
+}
+
+.unique-info{
+
+    text-align: left;
+    background:#5F9EA0;
+    border-radius: 3px;
+
+}
+
+.btn{
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #cc6699;
+    display: block;
+}
+
+.text{
+    display: block;
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left: 20px;
+    width: 460px;
+    height: 220px;
+}
+
+footer{
+    background: #49c1a2;
+    color: #F7FFF7;
+    margin-bottom:-15px;
+    padding: 0;
+}
