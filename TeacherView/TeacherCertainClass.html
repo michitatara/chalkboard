@@ -3,20 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>When a teacher selects a course from their list</title>
+  <link rel="stylesheet" href="style.css"/>
+  <title>Certain Class</title>
 </head>
+
 <body>
 <main>
   <header>
     <div class="topnav">
-      <a href="/chalkboard.github.io/TeacherView/TeacherHomepage.html"><input type="image" id="image" alt="Logo" src="/chalkboard.github.io/TeacherView/chalkboardlogo.jpg" width="10%" height="10%"></a>
+      <a href="/chalkboard.github.io/TeacherView/TeacherHomepage.html"><input type="image" id="image" alt="Logo" src="/chalkboard.github.io/TeacherView/chalkboardlogo.jpg" width="180" height="100"></a>
       <input type="text" placeholder="Search..">
     </div>
   </header>
+
   <section class="math-class">
-    <div class="content-wrap math-class divider">
+    <div class="math-class">
       <h2>Math Class: Calculus I</h2>
-      <p>Topics to be covered this term are:</p>
+      <h3>Topics to be covered this term are:</h3>
       <ul>
         <li>Limit and Continuity</li>
         <li>Derivatives: definition and basic rules</li>
@@ -27,53 +30,42 @@
       </ul>
 
       <section class="student-roster">
-        <div class="content-wrap student-roster">
-
-        </div>
+        <div class="content-wrap-student-roster">
         <h2>Student Roster</h2>
         <ol type = "1">
           <li>Name 1</li>
           <li>Name 2</li>
           <li>Name 3</li>
         </ol>
-
-      </section>
-
-      <section class="class-info">
-        <img src="/chalkboard.github.io/TeacherView/calculus.jpg" alt="calculus" width="20%" height="20%">
-        <div class="unique-info">
-          <p><b>Instructor for course: Math Professor</b></p>
-          <p>Required Readings for Class:</p>
-          <ul>
-            <li>Foundation of Calculus I</li>
-          </ul>
         </div>
       </section>
+
+      <div class="unique-info">
+        <h3>Instructor for course: Math Professor</h3>
+        <img src="/chalkboard.github.io/TeacherView/calculus.jpg" alt="calculus" width="180" height="250">
+          <p><b>Required Readings for Class:</b></p>
+          <ul>
+            <li>Foundation of Calculus I page 55-56</li><br>
+            <li>Calculate integral problems on page 60-61</li>
+          </ul>
+        </div>
+
     </div>
 
-    <section class ="math-assignments">
-      <div class="assigned-hw">
-        <p>Math Problems: Calculate following integrals.</p>
-      </div>
-    </section>
+    <a href="/chalkboard.github.io/TeacherView/CreateAssignment.html"><button type ="button" class="btn">Create new assignment </button></a>
 
-    <a href="CreateAssignment.html"><button type ="button">Create new assignment </button></a><br>
-    <br>
-    <button type="button">Delete class and associate contents</button>
+    <button type ="button" class="btn">Delete class and associate contents</button>
 
   </section>
-
   <footer>
-    <div class="content-wrap">
       <ul>
-        <li>King's College              12345@email.com</li>
+        <li>King's College12345@email.com</li>
         <li>100 St.</li>
         <li>Ave Z.</li>
         <li>New York,NY 00001</li>
         <li>(000)-(111)-(2222)</li>
-        <li>&copy 2021</li>
+        <li>&copy; 2021</li>
       </ul>
-    </div>
   </footer>
 </main>
 </body>
