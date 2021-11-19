@@ -1,5 +1,5 @@
 body{
-    background-color: #f5f5dc;
+    background-color: #b3ffff;
     font-family: "Roboto", sans-serif;
     margin:0;
     padding: 0;
@@ -14,7 +14,7 @@ header{
 .topnav{
     background-image: linear-gradient(#c31432, #240b36);
     border: 5px solid black;
-;
+
 }
 /* ------------------------TeacherHomepage----------------------- */
 
@@ -36,7 +36,7 @@ header{
 }
 
 .list-classes{
-    width: 360px;
+    width: 500px;
     height: 320px;
     text-align: left;
     background-color: #ADD8E6;
@@ -47,10 +47,11 @@ header{
 .list-classes p, h3{
     margin-left: 15px;
     font-size: 16px;
+
 }
 
 .graded-assignments {
-    width: 360px;
+    width: 500px;
     height: 80px;
     text-align: left;
     background-color: #ADD8E6;
@@ -64,11 +65,26 @@ header{
     margin-left: 5px;
 }
 
+input[type=button] {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type=button]:hover {
+    background-color: #45a049;
+}
 
 /*-------------------TeacherCertainClass------------------------ */
 .math-class{
     margin-top: -20px;
-    margin-bottom: -15px;
+    margin-bottom: 10px;
     padding: 5px;
 
 
@@ -86,14 +102,24 @@ header{
     border-bottom: 3px solid black;
     padding: 10px;
     margin-right: 5px;
+    margin-bottom: -35px;
 }
 
 .btn{
+    background-color:  #b3ffff;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    padding: 8px 22px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: block;
+    transition-duration: 0.4s;
 
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+}
 
+.btn:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
 }
 
 .text{
@@ -105,6 +131,47 @@ header{
     height: 220px;
 }
 
+/*------------------------CreateAssignment--------------------*/
+.assign{
+    margin-left:5px;
+    margin-bottom: 80px;
+}
+
+/*-----------------------CreateClass------------------------------*/
+
+.container{
+    margin-left: 15px;
+    margin-bottom: 93px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 25%;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/*-----------------CertainAssignment---------------*/
+short-answer-wrap h2,p{
+    margin-left: 15px;
+}
+
+
+/*-------------------PendingApplications---------------*/
+.pending{
+    margin-left: 15px;
+    padding-top: 50px;
+    margin-bottom: 200px;
+}
+
+
+
+
 footer{
     border: 5px solid black;
     background-image: linear-gradient(#c31432, #240b36);
@@ -112,4 +179,13 @@ footer{
     margin-top: 30px;
     margin-bottom:-5px;
     padding: 0;
+}
+
+.contact-list{
+    margin-right: 10px;
+    margin-left: 10px;
+    display:flex;
+    list-style-type:none;
+    padding: 0;
+    justify-content: space-between;
 }
