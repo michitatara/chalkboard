@@ -1,5 +1,5 @@
 body{
-    background-color: #344a72;
+    background-color: #f5f5dc;
     font-family: "Roboto", sans-serif;
     margin:0;
     padding: 0;
@@ -12,57 +12,88 @@ header{
 }
 
 .topnav{
-    background: #49c1a2;
+    background-image: linear-gradient(#c31432, #240b36);
+    border: 5px solid black;
+;
 }
-/* TeacherHomepage */
+/* ------------------------TeacherHomepage----------------------- */
+
+
+.header h1{
+    position: relative;
+    top: 18px;
+    left: 10px;
+    margin-left: 5px;
+
+}
+
+.header img{
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    border: 5px solid black;
+    float: left;
+}
+
 .list-classes{
     width: 360px;
-    height: 300px;
+    height: 320px;
     text-align: left;
-    background-color: white;
+    background-color: #ADD8E6;
     border-radius: 3px;
+    margin: 0;
+    border: 5px solid black;
+}
+.list-classes p, h3{
+    margin-left: 15px;
+    font-size: 16px;
 }
 
-.graded-assignments{
+.graded-assignments {
     width: 360px;
-    height: 100px;
+    height: 80px;
     text-align: left;
-    background-color: white;
+    background-color: #ADD8E6;
     border-radius: 3px;
+    margin-top: -10px;
+    border: 5px solid black;
 
 }
 
-/*TeacherCertainClass */
+.graded-assignments p{
+    margin-left: 5px;
+}
+
+
+/*-------------------TeacherCertainClass------------------------ */
 .math-class{
-    background: #4682B4;
     margin-top: -20px;
     margin-bottom: -15px;
+    padding: 5px;
+
+
 
 }
 
-.unique-info{
+.math-class img{
+    margin-left: 15px;
+    border: 5px solid black;
+}
 
-    text-align: left;
-    background:#5F9EA0;
-    border-radius: 3px;
 
+.student-roster{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 10px;
+    margin-right: 5px;
 }
 
 .btn{
-    border: none;
-    color: white;
-    padding: 8px 16px;
+
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
-    margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-    border: 2px solid #cc6699;
-    display: block;
+
 }
 
 .text{
@@ -75,8 +106,10 @@ header{
 }
 
 footer{
-    background: #49c1a2;
+    border: 5px solid black;
+    background-image: linear-gradient(#c31432, #240b36);
     color: #F7FFF7;
-    margin-bottom:-15px;
+    margin-top: 30px;
+    margin-bottom:-5px;
     padding: 0;
 }
