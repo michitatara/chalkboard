@@ -1,22 +1,39 @@
 <!DOCTYPE HTML>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student History Quiz todo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  type="text/css" href="studenthomepagestyle.css">
 </head>
 <body>
-<main>
-    <header>
-        <div class="topnav">
-            <h2>Quiz</h2>
-            <a href="/chalkboard.github.io/StudentView/StudentHomepage.html"><input type="image" id="image" alt="Logo" src="/chalkboard.github.io/Images/chalkboardlogo.jpg" width="10%" height="10%"></a>
-            <p><em>Please answer all questions to the best of your ability on your own.</em></p>
-        </div>
-    </header>
+<header>
+    <div class="content-wrap">
+        <nav class ="top-part">
+            <div id="inner">
+                <div id="logotopnav">
+                    <a href="StudentHomepage.html"><img src="chalkboardlogo.jpg" alt="Logo" width="150" height="100"></a>
+                </div>
 
-    <!-- form tag here 2.11.5 -->
-    <section class="short-answer-wrap">
+                <div id="banner" >
+                    <div class="text-wrapper">
+                        <img class="img-fluid" src="logobannernowords.jpg" alt="Student Logo 2" width="900" height="150">
+                        <h1 class="heading">Welcome to Chalkboard!</h1>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+        <div class="searchtopnav">
+            <input type="text" placeholder="Search..">
+        </div>
+    </div>
+</header>
+<main>
+    <div class="content-wrap">
+    <p><em>Please answer all questions to the best of your ability on your own.</em></p>
+    <div id="short-answer-wrap">
         <div class="question1">
             <label for= "qu1">What is meant by the term: "Return to Normalcy"?</label>
             <textarea id="qu1" name="qu1" rows="4" cols="40"></textarea>
@@ -25,8 +42,8 @@
             <label for="qu2">What is meant by the term rugged individualism?</label>
             <textarea id="qu2" name="qu2" rows="4" cols="40"></textarea>
         </div>
-    </section>
-    </section class ="mult-choice-wrap">
+    </div>
+    <div id ="mult-choice-wrap">
         <p>What years were Prohibition?</p>
         <div>
             <input type="radio" id="1934-1947" name="date" value="1934-1947">
@@ -61,20 +78,26 @@
             <input type="radio" id="21st" name="which" value="21st">
             <label for="21st">21st</label>
         </div>
-        </section>
-    <p><a href="/chalkboard.github.io/StudentView/StudentHomepage.html"><input type="button" value="Save your work and go to home, click here"></a></p>
-    <p><a href="/chalkboard.github.io/StudentView/StudentSuccessSubmit.html"><input type = "submit" value="Submit for grading"></a></p>
-
+        </div>
+        <form style= "display: inline" action="StudentHomepage.html" method="get">
+            <button>Save your work and go to home, click here</button>
+        </form>
+        <form style="display: inline" action="StudentSuccessSubmit.html" method="get">
+            <input type="submit" value="Submit for grading">
+        </form>
+    </div>
 
     <footer>
         <div class="content-wrap">
-            <ul>
-                <li>King's College              12345@email.com</li>
+            <h2>Contact Us!</h2>
+            <ul class = "contact-list">
+                <li>King's College</li>
+                <li>12345@email.com</li>
                 <li>100 St.</li>
                 <li>Ave Z.</li>
                 <li>New York,NY 00001</li>
                 <li>(000)-(111)-(2222)</li>
-                <li>&copy 2021</li>
+                <li>&copy; 2021</li>
             </ul>
         </div>
     </footer>
