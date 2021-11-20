@@ -1,3 +1,62 @@
+body{
+    background-color: #b3ffff;
+    font-family: "Roboto", sans-serif;
+    margin:0;
+    padding: 0;
+}
+header{
+    text-align: left;
+    color:white;
+    margin:0;
+    padding: 0;
+}
+
+.topnav{
+    background-image: linear-gradient(#c31432, #240b36);
+    border: 5px solid black;
+
+}
+
+.signup-box{
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    background-color: white;
+    border-radius:3px;
+    color: black;
+}
+
+.login-box{
+    width: 360px;
+    height: 270px;
+    background-color: white;
+    margin: auto;
+    border-radius: 3px;
+    color: black;
+}
+
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+    color: black;
+}
+
+h4{
+    text-align: center;
+}
+
+form{
+    width:300px;
+    margin-left: 20px;
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
 form input {
     width: 100%;
     padding: 7px;
@@ -30,6 +89,7 @@ p {
     font-size: 15px;
     margin-top: 50px;
     margin-bottom: 25px;
+    color: black;
 
 
 
