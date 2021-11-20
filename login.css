@@ -59,3 +59,92 @@ footer{
     padding: 0;
     justify-content: space-between;
 }
+@media screen and (max-width: 600px) {
+    nav{
+        background-image:url(/chalkboard.github.io/Images/logobannernowords.jpg);
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size:cover;
+        background-size:cover;
+        -o-background-size: cover;
+        min-height:725px;
+    }
+    .header a, .searchtopnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+}
+
+body {
+    background-color: #b3ffff;
+    height:100%;
+    margin:0;
+}
+
+#inner {
+    overflow: hidden;
+    width: 2000px;
+
+}
+.content-wrap{
+    margin: auto;
+    min-height:100%;
+    padding: 0;
+    width:900px;
+}
+
+#logotopnav {
+    float: left;
+    margin-right: 80px;
+}
+
+#banner {
+    float:left;
+    height:auto;
+    max-width: 100%;
+    padding: 0px;
+    width:100px;
+}
+
+nav{
+    background-blend-mode: multiply;
+    background-size: contain;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow: hidden;
+    height:100%
+}
+header {
+    overflow: hidden;
+    background-image: linear-gradient(#c31432, #240b36);
+}
+.text-wrapper{
+    position:relative;
+    width:90%;
+    margin:0 auto;
+}
+.text-wrapper img{
+    width:700px;
+    background-size:contain;
+    background-repeat: repeat-y;
+    overflow:visible;
+}
+.heading{
+    color: #ff8000;
+    position: absolute;
+    top:0%;
+    left:210%;
+    width:100%;
+    text-align: right;
+    white-space: nowrap;
+    font-size:2em;
+    font-family: 'Ubuntu', sans-serif;
+}
