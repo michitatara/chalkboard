@@ -19,19 +19,19 @@ header{
 
 .signup-box{
     width: 360px;
-    height: 620px;
-    margin: auto;
+    height: 550px;
+    margin: 5px auto;
+    border: 3px solid black;
     background-color: white;
-    border-radius:3px;
     color: black;
 }
 
 .login-box{
     width: 360px;
-    height: 270px;
+    height: 300px;
     background-color: white;
-    margin: auto;
-    border-radius: 3px;
+    margin: 5px auto;
+    border: 3px solid black;
     color: black;
 }
 
@@ -197,15 +197,14 @@ header {
     background-repeat: repeat-y;
     overflow:visible;
 }
-.heading{
+.heading {
     color: #ff8000;
     position: absolute;
-    top:0%;
-    left:210%;
-    width:100%;
+    top: 0%;
+    left: 210%;
+    width: 100%;
     text-align: right;
     white-space: nowrap;
-    font-size:2em;
+    font-size: 2em;
     font-family: 'Ubuntu', sans-serif;
 }
-
