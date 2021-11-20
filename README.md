@@ -8,6 +8,7 @@ For teacher, when you click the button, it will land you on the teacher homepage
 #### Admin View:
 For admin, when you click the button, it will land you to the admin homepage. Admin view is iimited because much of it requires receiving data from the database. Admins are able to see list of available classes, teachers, and students. They are also able to see past search history. For past search history, we created a page with sample data. Wherever in the pages says, "hyperlink!!!", it means when we have actual data to connect to, we will link it to there with a hyperlink. 
 When you click on the logo, it directs you back to the respective homepage of the respective user. 
+Link to our website is found at: https://michitatara.github.io/chalkboard.github.io/. Website is currently designed in HTML and CSS only at the moment and will be updated to have JavaScript and a database soon. 
 #### The following is a revised,digital version of our sitemap which we will be basing all future versions of our code off of
 ![chalkwirepart1](https://user-images.githubusercontent.com/59904212/138456799-7ccc740f-c18e-4689-bad7-597c16d161e0.jpg)
 ![chalkwirepart2](https://user-images.githubusercontent.com/59904212/138456993-e8bce0eb-b64e-48a9-b234-4881622c7d00.jpg)
