@@ -3,47 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student History Quiz todo</title>
+    <title>History Quiz</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet"  type="text/css" href="css/StudentHomepagestyle.css">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+
 </head>
 <body>
 <header>
-    <div class="content-wrap">
-        <nav class ="top-part">
-            <div id="inner">
-                <div id="logotopnav">
-                    <a href="StudentHomepage.ejs"><img src="images/chalkboardlogo.jpg" alt="Logo" width="150" height="100"></a>
-                </div>
-
-                <div id="banner" >
-                    <div class="text-wrapper">
-                        <img class="img-fluid" src="images/logobannernowords.jpg" alt="Student Logo 2" width="900" height="150">
-                        <h1 class="heading">Welcome to Chalkboard!</h1>
-                    </div>
-                </div>
-            </div>
-
-        </nav>
-        <div class="searchtopnav">
-            <input type="text" placeholder="Search..">
-        </div>
+    <nav class="navbar sticky-top navbar-light" style="background-color: hsl(335, 92%, 43%);">
+        <img src="images/chalkboardlogo.jpg" alt="Logo" class="logo" height="70" width="100">
+        <a href="./index.html" class="btn btn-warning" style="position: absolute; top: 2rem; right:2.5rem ">Log
+            Out</a>
+    </nav>
+    <div class="text-center" id="search">
+        <input type="text" placeholder="Search..">
     </div>
 </header>
-<main>
-    <div class="content-wrap">
+<main class="text-center">
+    <div>
     <p><em>Please answer all questions to the best of your ability on your own.</em></p>
-    <div id="short-answer-wrap">
-        <div class="question1">
+   
+        <div>
             <label for= "qu1">What is meant by the term: "Return to Normalcy"?</label>
             <textarea id="qu1" name="qu1" rows="4" cols="40"></textarea>
         </div>
-        <div class ="question2">
+        <div>
             <label for="qu2">What is meant by the term rugged individualism?</label>
             <textarea id="qu2" name="qu2" rows="4" cols="40"></textarea>
         </div>
     </div>
-    <div id ="mult-choice-wrap">
+    <div>
         <p>What years were Prohibition?</p>
         <div>
             <input type="radio" id="1934-1947" name="date" value="1934-1947">
@@ -79,27 +71,32 @@
             <label for="21st">21st</label>
         </div>
         </div>
-        <form style= "display: inline" action="StudentHomepage.ejs" method="get">
-            <button>Save your work and go to home, click here</button>
+        <form style= "display: inline" action="./StudentHomepage.html" method="get">
+            <button class="btn btn-warning">Save your work and go to home, click here</button>
         </form>
-        <form style="display: inline" action="StudentSuccessSubmit.ejs" method="get">
-            <input type="submit" value="Submit for grading">
+        <form style="display: inline" action="./StudentSuccessSubmit.html" method="get">
+            <input type="submit" value="Submit for grading" class="btn btn-success">
         </form>
-    </div>
+   
 
-    <footer>
-        <div class="content-wrap">
-            <h2>Contact Us!</h2>
-            <ul class = "contact-list">
-                <li>King's College</li>
-                <li>12345@email.com</li>
-                <li>100 St.</li>
-                <li>Ave Z.</li>
-                <li>New York,NY 00001</li>
-                <li>(000)-(111)-(2222)</li>
-                <li>&copy; 2021</li>
-            </ul>
-        </div>
+    <footer class="sticky-bottom" style=" margin-top:200px">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#">King's College</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mailto:12345@email.com">12345@email.com</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">(000)-(111)-(2222)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">100 St. Ave Z. New York,NY 00001</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">&copy; 2021</a>
+            </li>
+        </ul>
     </footer>
 </main>
 </body>

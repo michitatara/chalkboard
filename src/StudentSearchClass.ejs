@@ -2,77 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>When a Student Searches for a class in a searchbar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet"  type="text/css" href="css/StudentHomepagestyle.css">
-</head>
-<body>
-<header>
-  <div class="content-wrap">
-    <nav class ="top-part">
-      <div id="inner">
-        <div id="logotopnav">
-          <a href="StudentHomepage.ejs"><img src="images/chalkboardlogo.jpg" alt="Logo" width="150" height="100"></a>
-        </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student class search</title>
 
-        <div id="banner" >
-          <div class="text-wrapper">
-            <img class="img-fluid" src="images/logobannernowords.jpg" alt="Student Logo 2" width="900" height="150">
-            <h1 class="heading">Welcome to Chalkboard!</h1>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="searchtopnav">
-      <input type="text" placeholder="Search..">
-    </div>
-  </div>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
+</head>
+<body class="text-center">
+<header>
+  <nav class="navbar sticky-top navbar-light" style="background-color: hsl(335, 92%, 43%);">
+    <img src="images/chalkboardlogo.jpg" alt="Logo" class="logo" height="70" width="100">
+    <a href="./index.html" class="btn btn-warning"
+        style="position: absolute; top: 2rem; right:2.5rem ">Log
+        Out</a>
+
+</nav>
+<div class="text-center" id="search">
+    <input type="text" placeholder="Search..">
+</div>
 </header>
 <main>
-  <div class="content-wrap">
-  <section class="english-class">
-    <div class="content-wrap english-class divider">
+    <div>
       <h2>English Class 300:</h2>
       <p>Topics to be covered this term are:Responding to passages effectively, noting character development in text, and more...</p>
-
-      <section class="class-info">
         <img src="images/grapesofwrath.jpg" alt="grapes-of-wrath" style="width:20%; height:15%">
-        <div class="unique-info">
-          <p><b>Instructor for course: Professor Susan Clyne</b></p>
+         <p><b>Instructor for course: Professor Susan Clyne</b></p>
           <h3><b>Required Readings for Class:</b></h3>
-          <ul>
-            <li>The Grapes of Wrath By, John Steinbeck</li>
-            <li>The Odyssey By, Homer</li>
+         
+          <ul class="list-group">
+            <li class="list-group-item">The Grapes of Wrath By, John Steinbeck</li>
+            <li class="list-group-item">The Odyssey By, Homer</li>
           </ul>
-        </div>
-      </section>
-    </div>
-
-      <div class="enroll">
-        <form style="display: inline" action="StudentSuccessEnroll.ejs" method="get">
-          <input type="submit"  value="Click here to enroll in this class">
+        
+      
+  
+     
+        <form style="display: inline" action="./StudentSuccessEnroll.html" method="get">
+          <input type="submit"  value="Click here to enroll in this class" class="btn btn-warning">
         </form>
         <p><em>Each enrollment request is sent to the respective teacher for authorisation.</em></p>
-      </div>
+    
 
-
-  </section>
   </div>
-  <footer>
-    <div class="content-wrap">
-      <h2>Contact Us!</h2>
-      <ul class = "contact-list">
-        <li>King's College</li>
-        <li>12345@email.com</li>
-        <li>100 St.</li>
-        <li>Ave Z.</li>
-        <li>New York,NY 00001</li>
-        <li>(000)-(111)-(2222)</li>
-        <li>&copy; 2021</li>
-      </ul>
-    </div>
-  </footer>
+  <footer class="sticky-bottom" style=" margin-top:300px">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">King's College</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="mailto:12345@email.com">12345@email.com</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">(000)-(111)-(2222)</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">100 St. Ave Z. New York,NY 00001</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">&copy; 2021</a>
+        </li>
+    </ul>
+</footer>
 </main>
 </body>
 </html>

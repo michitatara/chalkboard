@@ -1,72 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/chalkboard.github.io/TeacherView/style.css" >
-    <title>Pending Applications</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pending students</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/mycss.css">
 
 
 </head>
-<body>
-<header>
-    <div class="content-wrap">
-        <nav class ="top-part">
-            <div id="inner">
-                <div id="logotopnav">
-                    <a href="/chalkboard.github.io/TeacherView/TeacherHomepage.html"><img src="/chalkboard.github.io/TeacherView//chalkboard.github.io/TeacherView/chalkboardlogo.jpg" alt="Logo" width="150" height="100"></a>
-                </div>
 
-                <div id="banner" >
-                    <div class="text-wrapper">
-                        <img class="img-fluid" src="/chalkboard.github.io/Images/logobannernowords.jpg" alt="Student Logo 2" width="900" height="150">
-                        <h1 class="heading">Welcome to Chalkboard!</h1>
-                    </div>
-                </div>
-            </div>
-
+<body class="text-center">
+    <header>
+        <nav class="navbar sticky-top navbar-light" style="background-color: hsl(335, 92%, 43%);">
+            <img src="images/chalkboardlogo.jpg" alt="Logo" class="logo" height="70" width="100">
+            <a href="./index.html" class="btn btn-warning" style="position: absolute; top: 2rem; right:2.5rem ">Log
+                Out</a>
         </nav>
-        <div class="searchtopnav">
+        <div class="text-center" id="search">
             <input type="text" placeholder="Search..">
         </div>
+    </header>
+
+    <h2>Requests</h2>
+    <div class="mycontainer">
+
+        <div class="card" style="width: 10rem;">
+
+            <div class="card-body">
+                <p>Sabrina Khan</p>
+                <a href="sabrinakhan@Kmail.edu">contact</a><br>
+                <button class="btn btn-success">Accept</button>
+                <button class="btn btn-danger">Deny</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 10rem;">
+
+            <div class="card-body">
+                <p>Leah Kim</p>
+                <a href="sabrinakhan@Kmail.edu">contact</a><br>
+                <button class="btn btn-success">Accept</button>
+                <button class="btn btn-danger">Deny</button>
+            </div>
+        </div>
+
+        <div class="card" style="width: 10rem;">
+
+            <div class="card-body">
+                <p>Dyaln Bob</p>
+                <a href="sabrinakhan@Kmail.edu">contact</a><br>
+                <button class="btn btn-success">Accept</button>
+                <button class="btn btn-danger">Deny</button>
+            </div>
+        </div>
     </div>
-</header>
 
-<div class="pending">
-<h1>Pending Applications</h1>
-
-<p>Following students are awaiting approval:</p>
-<ol>
-    <li>Student 1</li>
-    <input type="radio" name="test" value="Approve"> Approve
-    <input type="radio" name="test" value="Disapprove"> Disapprove
-    <li>Student 2</li>
-    <input type="radio" name="test" value="Approve"> Approve
-    <input type="radio" name="test" value="Disapprove"> Disapprove
-    <li>Student 3</li>
-    <input type="radio" name="test" value="Approve"> Approve
-    <input type="radio" name="test" value="Disapprove"> Disapprove
-    <li>Student 4</li>
-    <input type="radio" name="test" value="Approve"> Approve
-    <input type="radio" name="test" value="Disapprove"> Disapprove
-
-    <p><a href="/chalkboard.github.io/TeacherView/TeacherHomepage.html"><input type="button" value="Submit"></a></p>
-
-</ol>
-
-</div>
-
-<footer>
-    <h2>Contact Us!</h2>
-    <ul class="contact-list">
-        <li>King's College</li>
-        <li>12345@email.com</li>
-        <li>100 St.</li>
-        <li>Ave Z.</li>
-        <li>New York,NY 00001</li>
-        <li>(000)-(111)-(2222)</li>
-        <li>&copy; 2021</li>
-    </ul>
-</footer>
+    <footer class="sticky-bottom" style=" margin-top:400px">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link disabled" aria-current="page" href="#">King's College</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mailto:12345@email.com">12345@email.com</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">(000)-(111)-(2222)</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">100 St. Ave Z. New York,NY 00001</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">&copy; 2021</a>
+            </li>
+        </ul>
+    </footer>
 
 </body>
+
 </html>
