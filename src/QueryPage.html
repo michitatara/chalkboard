@@ -1,66 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Administrator Home Page</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/AdminHomePagestyle.css">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/mycss.css">
+
 </head>
-<body>
-<header>
-  <div class="content-wrap">
-    <nav class ="top-part">
-      <div id="inner">
-        <div id="logotopnav">
-          <a href="./AdminHomePage.html"><img src="images/chalkboardlogo.jpg" alt="Logo" width="150" height="100"></a>
-        </div>
 
-        <div id="banner" >
-          <div class="text-wrapper">
-            <img class="img-fluid" src="images/logobannernowords.jpg" alt="Student Logo 2" width="900" height="150">
-            <h1 class="heading">Welcome to Chalkboard!</h1>
-          </div>
-        </div>
-      </div>
-
+<body class="text-center">
+  <header>
+    <nav class="navbar sticky-top navbar-light" style="background-color: hsl(335, 92%, 43%);">
+      <img src="images/chalkboardlogo.jpg" alt="Logo" class="logo" height="70" width="100">
+      <a href="./index.html" class="btn btn-warning" style="position: absolute; top: 2rem; right:2.5rem ">Log
+        Out</a>
     </nav>
-    <div class="searchtopnav">
+
+    <div class="text-center" id= "search">
       <input type="text" placeholder="Search..">
     </div>
-  </div>
-</header>
-<main>
-  <div class="content-wrap">
-    <div id="inside">
-    <div class="wrap-query-students">
-      <h3>Recent Search History of Students</h3>
-      <p><a href="./TeacherCertainClass.html">Math Class 325</a></p>
-      <p><a href="./StudentSearchClass.html">English Class 300</a></p>
-      <p><a href="./StudentCertainClass.html">History Class 325</a></p>
+  </header>
+  <main>
+    <div class="mycontainer">
+
+      <div class="card" style="width: 25rem;">
+        <div class="card-body">
+          <h5 class="card-title">Recent Search History of Students</h5>
+          <a href="./TeacherCertainClass.html" class="card-link">Math Class 325</a><br>
+          <a href="./StudentSearchClass.html" class="card-link">English Class 300</a><br>
+          <a href="./StudentCertainClass.html" class="card-link">History Class 325</a><br>
+        </div>
+      </div>
+
+      <div class="card" style="width: 25rem;">
+        <div class="card-body">
+          <h5 class="card-title">Recent Search History of Teachers</h5>
+          <p>Thomas Jones hyperlink !!!</p><br>
+          <p>Writing 240 hyperlink!!!</p><br>
+          <p>Dominic Hinton hyperlink!!!</p><br>
+        </div>
+      </div>
+
     </div>
 
-    <div class="wrap-query-teachers">
-      <h3>Recent Search History of Teachers</h3>
-      <p>Thomas Jones hyperlink !!!</p>
-      <p>Writing 240 hyperlink!!!</p>
-      <p>Dominic Hinton hyperlink!!!</p>
-    </div>
-      </div>
-  </div>
-  <footer>
-    <div class="content-wrap">
-      <h2>Contact Us!</h2>
-      <ul class="contact-list">
-        <li>King's College</li>
-        <li>12345@email.com</li>
-        <li>100 St.</li>
-        <li>Ave Z.</li>
-        <li>New York,NY 00001</li>
-        <li>(000)-(111)-(2222)</li>
-        <li>&copy; 2021</li>
+
+    <footer class="sticky-bottom" style=" margin-top:370px">
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-current="page" href="#">King's College</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mailto:12345@email.com">12345@email.com</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">(000)-(111)-(2222)</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">100 St. Ave Z. New York,NY 00001</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">&copy; 2021</a>
+        </li>
       </ul>
-    </div>
-  </footer>
-</main>
+    </footer>
+
+  </main>
 </body>
