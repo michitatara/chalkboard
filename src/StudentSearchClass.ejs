@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>When a student selects a course from their list</title>
+  <title>When a Student Searches for a class in a searchbar</title>
   <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet"  type="text/css" href="css/StudentHomepagestyle.css">
 </head>
@@ -13,8 +13,9 @@
     <nav class ="top-part">
       <div id="inner">
         <div id="logotopnav">
-          <a href="./StudentHomepage.html"><img src="images/chalkboardlogo.jpg" alt="Logo" width="150" height="100"></a>
+          <a href="StudentHomepage.ejs"><img src="images/chalkboardlogo.jpg" alt="Logo" width="150" height="100"></a>
         </div>
+
         <div id="banner" >
           <div class="text-wrapper">
             <img class="img-fluid" src="images/logobannernowords.jpg" alt="Student Logo 2" width="900" height="150">
@@ -22,7 +23,6 @@
           </div>
         </div>
       </div>
-
     </nav>
     <div class="searchtopnav">
       <input type="text" placeholder="Search..">
@@ -31,38 +31,34 @@
 </header>
 <main>
   <div class="content-wrap">
-  <section class="history-class">
-    <div class="content-wrap history-class divider">
-      <h2>History Class 325:</h2>
-      <p>Topics to be covered this term are:The Roaring Twenties, The Great Depression, WWII, and more...</p>
+  <section class="english-class">
+    <div class="content-wrap english-class divider">
+      <h2>English Class 300:</h2>
+      <p>Topics to be covered this term are:Responding to passages effectively, noting character development in text, and more...</p>
 
       <section class="class-info">
-        <img src="images/twenties.jpg" alt="roaring-twenties" style="width:20%; height:20%">
+        <img src="images/grapesofwrath.jpg" alt="grapes-of-wrath" style="width:20%; height:15%">
         <div class="unique-info">
-          <p><b>Instructor for course: Professor Abe Lin</b></p>
+          <p><b>Instructor for course: Professor Susan Clyne</b></p>
           <h3><b>Required Readings for Class:</b></h3>
           <ul>
-            <li>United States History 5th Edition BJU Press</li>
-            <li>History Course Reader 325 By Abe Lin</li>
+            <li>The Grapes of Wrath By, John Steinbeck</li>
+            <li>The Odyssey By, Homer</li>
           </ul>
         </div>
       </section>
     </div>
 
-    <section class ="history-assignments">
-  <div class="assigned-hw">
-    <h3><b>Work to be completed for this class:</b></h3>
-    <p>Critical Reading: "The Dust Bowl"</p>
-    <a href="./HistoryQuiz.html"><p>Quiz!!</p></a>
-  </div>
-
-      <div class ="current-quiz">
-        <a href="./HistoryQuiz.html"><p>Pick up where you left off on the assignment.</p></a>
+      <div class="enroll">
+        <form style="display: inline" action="StudentSuccessEnroll.ejs" method="get">
+          <input type="submit"  value="Click here to enroll in this class">
+        </form>
+        <p><em>Each enrollment request is sent to the respective teacher for authorisation.</em></p>
       </div>
-    </section>
+
+
   </section>
   </div>
-
   <footer>
     <div class="content-wrap">
       <h2>Contact Us!</h2>
