@@ -1,10 +1,26 @@
-var express = require('express');
-const ejs = require('ejs');
-var app = express ();
-app.use(express.static('public'));
-app.set('view engine', 'ejs');
-app.listen(3306);
+const express = require('express')
+const path=require('path')
+const bodyParser = require('body-parser')
+const mongoose=require('mongoose')
+const User= require('./model/user')
 
-app.get('/', function (req,res){
-    res.render('src/index');
+
+
+mongoose.connect('mongodb://localhost:27017/login-app-db', {
+	useNewUrlParser: true,
+	useUnifiedTopology: true
 })
+
+const app = express ()
+app.use('/', express.static(path.join(__dirname, 'static')))
+app.use(bodyParser.json());
+
+app.post('/api/register', async(req, res)=> {
+   console.log(req.body)
+    res.json({status:'ok'})
+})
+app.listen(9999, () =>{
+    console.log('Server up at 9999')
+   
+})
+
