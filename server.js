@@ -12,11 +12,17 @@ mongoose.connect('mongodb://localhost:27017/login-app-db', {
 })
 
 app.set('view engine', 'ejs');
+
 app.use(express.urlencoded({ extended: true }))
 
+
 app.get('/', (req, res) => {
-    res.render('signup');
-});
+    res.render(path.join( __dirname ,'/views','signup'));
+})
+
+const publicDirectoryPath = path.join(__dirname, '/views');
+const staticDirectory =  express.static(publicDirectoryPath);
+app.use(staticDirectory);
 
 app.post('/api/register', async(req, res)=> {
    console.log(req.body)
