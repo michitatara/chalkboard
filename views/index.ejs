@@ -4,55 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administrator Home Page</title>
+    <title>Login</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css">
+    <script src="login.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar sticky-top navbar-light" style="background-color: hsl(335, 92%, 43%);">
-            <img src="images/chalkboardlogo.jpg" alt="Logo" class="logo" height="70" width="100">
-        </nav>
-    </header>
-    <div class="text-center" style="padding-top: 200px;">
+<header>
+    <nav class="navbar sticky-top navbar-light" style="background-color: hsl(335, 92%, 43%);">
+        <img src="images/chalkboardlogo.jpg" alt="Logo" class="logo" height="70" width="100">
+    </nav>
+</header>
+
+    <form class="login-box" action="index.html" method="POST">
         <h1>Login</h1>
-        <form class="form-inline">
-            <label class="mb-3">Email</label>
-            <input type="email" placeholder="abc@kmail.com" /><br>
-            <label class="mb-3">Password</label>
-            <input type="password" placeholder="abc123" /><br>
-            <input type="button" value="Submit" class="btn btn-info" id="search1" /><br>
+        <label>Email</label>
+        <input type="username" placeholder="User@email.com" id="username"/>
+        <label>Password</label>
+        <input type="password" placeholder="Password" id="password" />
 
-            <a href="./AdminHomePage.html" class="btn btn-info">Admin</a>
-            <a href="./StudentHomepage.html" class="btn btn-info">Student</a>
-            <a href="./TeacherHomepage.html" class="btn btn-info">Teacher</a>
-        </form>
-    </div>
-    <p class="text-center" style="padding: 30px;">
-        Don't have an account? <a href="/chalkboard.github.io/signup.html">Sign Up Here</a>
-    </p>
+        <input type="button" value="Submit" onclick="validate()" />
 
-    <footer class="sticky-bottom" style=" margin-top:300px">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link disabled" aria-current="page" href="#">King's College</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="mailto:12345@email.com">12345@email.com</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">(000)-(111)-(2222)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">100 St. Ave Z. New York,NY 00001</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled">&copy; 2021</a>
-            </li>
-        </ul>
-    </footer>
+
+        <a href="./StudentHomepage.html" class="btn btn-success">Student</a>
+        <a href="./TeacherHomepage.html" class="btn btn-success">Teacher</a>
+    </form>
+
+<p class="text-center" style="padding: 30px;">
+    Don't have an account? <a href="/chalkboard.github.io/signup.html">Sign Up Here</a>
+</p>
+
+<footer class="sticky-bottom" style=" margin-top:300px">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">King's College</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="mailto:12345@email.com">12345@email.com</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">(000)-(111)-(2222)</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">100 St. Ave Z. New York,NY 00001</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled">&copy; 2021</a>
+        </li>
+    </ul>
+</footer>
 </body>
 
 </html>
