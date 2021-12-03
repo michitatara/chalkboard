@@ -21,22 +21,23 @@ app.get('/', (req, res) => {
     res.render(path.join( __dirname ,'/views','signup'));
 })
 
-//const publicDirectoryPath = path.join(__dirname, '/views');
-//const staticDirectory =  express.static(publicDirectoryPath);
-//app.use(staticDirectory);
+const publicDirectoryPath = path.join(__dirname, '/views');
+const staticDirectory =  express.static(publicDirectoryPath);
+app.use(staticDirectory);
 
 
 app.post('/api/register', async (req, res) => {
 	const { firstname, lastname, email, password: plainTextPassword } = req.body
-    if (!email || typeof e !== 'string') {
+
+    if (!firstname || typeof firstname !== 'string') {
 		return res.json({ status: 'error', error: 'Invalid username' })
 	}
-    if (!email || typeof email !== 'string') {
+    if (!lastname || typeof lastname !== 'string') {
 		return res.json({ status: 'error', error: 'Invalid username' })
 	}
 
 	if (!email || typeof email !== 'string') {
-		return res.json({ status: 'error', error: 'Invalid username' })
+		return res.json({ status: 'error', error: 'Invalid email' })
 	}
 
 	if (!plainTextPassword || typeof plainTextPassword !== 'string') {
