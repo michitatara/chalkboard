@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const User = require("./models/user");
 const User2 = require("./models/user2");
 const ejs = require("ejs");
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 const app = express();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
@@ -12,19 +12,20 @@ const cors = require("cors");
 require("dotenv").config();
 var cookies = require("cookie-parser");
 const Auth = require("./middleware/auth");
+const router = express.Router();
 
 mongoose.connect("mongodb://localhost:27017/login-app-db2", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-
+// app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 app.use(cookies());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: "http://localhost:8000/",
+    origin: "http://localhost:3000/",
     credentials: "true",
   })
 );
@@ -247,6 +248,11 @@ app.get("/adminhomepage", (req, res) => {
   res.render(path.join(__dirname, "/views", "AdminHomePage"));
 });
 
+//teacher certain class
+app.get("/teachercertainclass", (req, res) => {
+  res.render(path.join(__dirname, "/views", "TeacherCertainClass"));
+});
+
 // logout
 //not sure if i changed somthing accidentally
 app.get("/logout", (req, res) => {
@@ -259,12 +265,39 @@ app.get("/logout", (req, res) => {
 });
 
 // all data of database for admin use
-
-app.get("/allData", async (req, res) => {
+// changed
+app.get("/adminhomepage", async (req, res) => {
   const data = await User.find();
   res.status(200).send({ data });
 });
 
+app.get("/adminhomepage", async (req, res) => {
+  const data = await User2.find();
+  res.status(200).send({ data });
+});
+var fetchRouter = require("./routes/fetch-route");
+app.use("/", fetchRouter);
+
+// app.use(flash());
+// app.use("/adminhomepage", usersRouter);
+
+// // catch 404 and forward to error handler
+// app.use(function (req, res, next) {
+//   next(createError(404));
+// });
+
+// // error handler
+// app.use(function (err, req, res, next) {
+//   // set locals, only providing error in development
+//   res.locals.message = err.message;
+//   res.locals.error = req.app.get("env") === "development" ? err : {};
+
+//   // render the error page
+//   res.status(err.status || 500);
+//   res.render("error");
+// });
+
 app.listen(port, () => {
   console.log(`Server up at ${port}`);
 });
+module.exports = router;

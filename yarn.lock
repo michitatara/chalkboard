@@ -135,6 +135,11 @@
   "resolved" "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
   "version" "0.0.1"
 
+"connect-flash@0.1.x":
+  "integrity" "sha1-2GMPJtlaf4UfmVax6MxnMvO2qjA="
+  "resolved" "https://registry.npmjs.org/connect-flash/-/connect-flash-0.1.1.tgz"
+  "version" "0.1.1"
+
 "content-disposition@0.5.3":
   "integrity" "sha512-ExO0774ikEObIAEV9kDo50o+79VCUdEB6n6lzKgGwupcVeRlhrj3qGAfwq8G6uBJjkqLrhT0qEYFcWng8z1z0g=="
   "resolved" "https://registry.npmjs.org/content-disposition/-/content-disposition-0.5.3.tgz"
@@ -250,6 +255,13 @@
   "integrity" "sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc="
   "resolved" "https://registry.npmjs.org/etag/-/etag-1.8.1.tgz"
   "version" "1.8.1"
+
+"express-flash@^0.0.2":
+  "integrity" "sha1-I9GovPP5DXB5KOSJ+Whp7K0KzaI="
+  "resolved" "https://registry.npmjs.org/express-flash/-/express-flash-0.0.2.tgz"
+  "version" "0.0.2"
+  dependencies:
+    "connect-flash" "0.1.x"
 
 "express@^4.17.1":
   "integrity" "sha512-mHJ9O79RqluphRrcw2X/GTh3k9tVv8YcoyY4Kkh4WDMUYKRZUq0h1o0w2rrrxBqM7VoeUVqgb27xlEMXTnYt4g=="
