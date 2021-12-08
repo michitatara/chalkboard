@@ -3,18 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teacher Homepage</title>
-
+    <title>Login</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/mycss.css" />
   </head>
 
-  <body>
+  <body class="text-center">
     <header>
       <nav
         class="navbar sticky-top navbar-light"
@@ -27,50 +25,34 @@
           height="70"
           width="100"
         />
-        <a
-          href="/login"
-          class="btn btn-warning"
-          style="position: absolute; top: 2rem; right: 2.5rem"
-          onclick="logout();"
-          >Log Out</a
-        >
       </nav>
-      <div class="text-center" id="search">
-        <input type="text" placeholder="Search.." />
-      </div>
     </header>
 
-    <main class="text-center">
-      <div class="header">
-<<<<<<< HEAD
-        <h1>Welcome <%= username%></h1>
-=======
-        <h1>Welcome Teacher!</h1>
->>>>>>> refs/remotes/origin/main
-      </div>
+    <form action="index.html" method="POST">
+      <h1>Login</h1>
+      <label>Email</label>
+      <input type="username" placeholder="User@email.com" id="username" /><br />
+      <label>Password</label>
+      <input type="password" placeholder="Password" id="password" /><br />
+      <!-- <label>Role</label>
+      <input type="role" placeholder="teacher/student" id="role" /><br /> -->
 
-      <h3>All of My Classes:</h3>
-      <p>Click on a class to see class info, current assignments, and more!</p>
+      <input
+        type="button"
+        value="Submit"
+        onclick="validate()"
+        class="btn btn-success"
+      /><br />
 
-<<<<<<< HEAD
-      <a href="/teachercertainclass">
-=======
-      <a href="./TeacherCertainClass.html">
->>>>>>> refs/remotes/origin/main
-        <p>Math Class 253</p>
-      </a>
-      <p>English Class 300</p>
-      <p>History Class 325</p>
-      <p><a href="./CreateClass.html" class="btn btn-success">Add Course</a></p>
+      <!-- <a href="./StudentHomepage.html" class="btn btn-success">Student</a>
+        <a href="./TeacherHomepage.html" class="btn btn-success">Teacher</a> -->
+    </form>
 
-      <a href="./GradeAssignment.html">
-        <p>View submitted Assignments</p>
-      </a>
-      <a href="./PendingApplications.html">
-        <p>View Pending Applications</p>
-      </a>
-    </main>
-    <footer class="sticky-bottom" style="margin-top: 200px">
+    <p class="text-center" style="padding: 30px">
+      Don't have an account? <a href="/">Sign Up Here</a>
+    </p>
+
+    <footer class="sticky-bottom" style="margin-top: 300px">
       <ul class="nav justify-content-center">
         <li class="nav-item">
           <a class="nav-link disabled" aria-current="page" href="#"
@@ -93,5 +75,49 @@
         </li>
       </ul>
     </footer>
+    <script>
+      async function validate() {
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        // const role = document.getElementById("role").value;
+        const data = { email: username, password };
+        await fetch("/login", {
+          method: "POST",
+          mode: "cors",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((data) => data.json())
+          .then((data) => {
+            console.log(data);
+            if (data.role === "teacher") {
+              alert("login successfully");
+              window.location.href = "/teacherhomepage";
+            }
+            if (data.role === "student") {
+              window.location.href = "/studenthomepage";
+            }
+            if (username == "admin" && password == "user") {
+              alert("login successfully");
+              window.location.href = "/adminhomepage";
+            }
+          })
+          .catch((err) => console.log(err));
+      }
+
+      // function validate() {
+      //   var username = document.getElementById("username").value;
+      //   var password = document.getElementById("password").value;
+      //   if (username == "admin" && password == "user") {
+      //     alert("login successfully");
+      //     window.location.replace("/adminhomepage");
+      //     return false;
+      //   } else {
+      //     alert("login failed");
+      //   }
+      // }
+    </script>
   </body>
 </html>
