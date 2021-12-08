@@ -238,7 +238,16 @@ app.get("/studenthomepage", Auth, (req, res) => {
   res.render(path.join(__dirname, "/views", "StudentHomePage"));
 });
 
+<<<<<<< HEAD
 // teacher homepage authriztion route
+=======
+    if (!firstname || typeof firstname !== 'string') {
+		return res.json({ status: 'error', error: 'valid username' })
+	}
+    if (!lastname || typeof lastname !== 'string') {
+		return res.json({ status: 'error', error: 'valid username' })
+	}
+>>>>>>> refs/remotes/origin/main
 
 app.get("/teacherhomepage", Auth, (req, res) => {
   res.render(path.join(__dirname, "/views", "TeacherHomePage"));

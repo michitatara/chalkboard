@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const UserSchema = new mongoose.Schema(
+<<<<<<< HEAD
   {
     firstname: { type: String, required: true },
     lastname: { type: String, required: true },
@@ -24,3 +25,18 @@ module.exports = {
     });
   },
 };
+=======
+	{
+        firstname: { type: String, required: true},
+        lastname: { type: String, required: true},
+		role: { type: String, required: true},
+		email: { type: String, required: true, unique: true },
+		password: { type: String, required: true }
+	},
+	{ collection: 'users' }
+)
+
+const model = mongoose.model('UserSchema', UserSchema)
+
+module.exports = model
+>>>>>>> refs/remotes/origin/main
