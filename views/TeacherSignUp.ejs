@@ -1,3 +1,4 @@
+<!-- new file 12/07-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,7 +24,7 @@
 
     <h1>Sign Up</h1>
 
-    <form class="form-inline"  id="reg-form" >
+    <form class="form-inline"  id="reg2-form" >
       <label class="mb-3">First Name</label>
       <input type="text" id="firstname" placeholder="amy" /><br>
       <label class="mb-3">Last Name</label>
@@ -33,9 +34,9 @@
       <label class="mb-3">Password</label>
       <input type="password" id="password" placeholder="" /><br>
       <label class="mb-3">Role</label>
-      <input type="role" id="role" placeholder="student" /><br>
+      <input type="role" id="role" placeholder="teacher" /><br>
       <input type="submit" value="Submit Form" class="btn btn-success" style="margin-top: 50px;"/><br>
-      <a href="/teachersignup" class="btn btn-success" style="margin-top: 50px;">Teacher</a> 
+     
     </form>
 
  
@@ -45,7 +46,7 @@
     </p>
   </div>
   <p class="text-center">
-    Already have an account? <a href="/login" class="btn btn-warning">Login here</a>
+    Already have an account? <a href="/teacherlogin" class="btn btn-warning">Login here</a>
   </p>
 
   <footer class="sticky-bottom" style=" margin-top:300px">
@@ -70,11 +71,11 @@
 
 <script> 
 
-const form =document.getElementById('reg-form')
-form.addEventListener('submit', registerUser)
+const form =document.getElementById('reg2-form')
+form.addEventListener('submit', registerUser2)
 
 
-async function registerUser(event){
+async function registerUser2(event){
   event.preventDefault()
 
   const firstname= document.getElementById('firstname').value
@@ -84,7 +85,7 @@ async function registerUser(event){
   const role= document.getElementById('role').value
   const data={firstname,lastname,email,password,role};
 
-  await fetch('/api/register',{
+  await fetch('/api/register2',{
     method:'POST',
      mode: 'cors',
     headers:{

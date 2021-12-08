@@ -81,7 +81,7 @@
         const password = document.getElementById("password").value;
         // const role = document.getElementById("role").value;
         const data = { email: username, password };
-        await fetch("/login", {
+        await fetch("/teacherlogin", {
           method: "POST",
           mode: "cors",
           headers: {
@@ -96,9 +96,9 @@
               alert("login successfully");
               window.location.href = "/teacherhomepage";
             }
-            if (data.role === "student") {
-              window.location.href = "/studenthomepage";
-            }
+            // if (data.role === "student") {
+            //   window.location.href = "/studenthomepage";
+            // }
             if (username == "admin" && password == "user") {
               alert("login successfully");
               window.location.href = "/adminhomepage";
