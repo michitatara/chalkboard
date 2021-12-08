@@ -30,10 +30,10 @@ app.post('/api/register', async (req, res) => {
 	const { firstname, lastname, email, password: plainTextPassword } = req.body
 
     if (!firstname || typeof firstname !== 'string') {
-		return res.json({ status: 'error', error: 'Invalid username' })
+		return res.json({ status: 'error', error: 'valid username' })
 	}
     if (!lastname || typeof lastname !== 'string') {
-		return res.json({ status: 'error', error: 'Invalid username' })
+		return res.json({ status: 'error', error: 'valid username' })
 	}
 
 	if (!email || typeof email !== 'string') {
