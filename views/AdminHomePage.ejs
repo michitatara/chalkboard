@@ -46,28 +46,28 @@
           <div class="card-body">
             <h5 class="card-title">List of all available classes:</h5>
             <p>
-              <a href="./StudentCertainClass.html" class="card-link"
+              <a href="/studentcertainclass" class="card-link"
                 >History Class 325</a
               >
             </p>
             <p>
-              <a href="./StudentSearchClass.html" class="card-link"
+              <a href="/studentsearchclass" class="card-link"
                 >English Class 300</a
               >
             </p>
             <p>
-              <a href="./TeacherCertainClass.html" class="card-link"
+              <a href="/teachercertainclass" class="card-link"
                 >Math Class 325</a
               >
             </p>
           </div>
         </div>
 
-        <div class="card" style="width: 18rem">
+        <!-- <div class="card" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">List of all available teachers:</h5>
             <p>
-              <a href="./StudentHomepage.html" class="card-link"
+              <a href="/studenthomepage" class="card-link"
                 >Abe Lin.hyperlink !!!</a
               >
             </p>
@@ -78,11 +78,11 @@
         <div class="card" style="width: 18rem">
           <div class="card-body">
             <h5 class="card-title">List of all available students:</h5>
-            <p><a href="./Student1.html" class="card-link">Seema Singh</a></p>
+            <p><a href="/student1" class="card-link">Seema Singh</a></p>
             <p>Carlisle Thompson</p>
             <p>Katy Perez</p>
           </div>
-        </div>
+        </div> -->
       </div>
 
       <div class="text-center">
@@ -90,7 +90,7 @@
           <input type="submit" value="Click to see past search history" />
         </form>
       </div>
-      <!-- <div>
+      <div>
         <table class="table">
           <thead>
             <tr>
@@ -102,14 +102,13 @@
             </tr>
           </thead>
           <tbody>
-            <% if(userData.length!=0){ var i=1; userData.forEach(function(data){
-            %>
+            <% if(data.length>0){ var i=0;data.forEach(function(d){%>
             <tr>
               <th scope="row"><%= (i+1) %></th>
-              <td><%= data[i].firstname%></td>
-              <td><%= data[i].last%></td>
-              <td><%= data[i].role%></td>
-              <td><%= data[i].email%></td>
+              <td><%= d.firstname%></td>
+              <td><%= d.lastname%></td>
+              <td><%= d.role%></td>
+              <td><%= d.email%></td>
             </tr>
             <% i++; }) %> <% } else{ %>
             <tr>
@@ -118,7 +117,7 @@
             <% } %>
           </tbody>
         </table>
-      </div> -->
+      </div>
 
       <footer class="sticky-bottom" style="margin-top: 370px">
         <ul class="nav justify-content-center">
