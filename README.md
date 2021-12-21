@@ -1,5 +1,15 @@
 # chalkboard
 #### Team Members: Mezbahuddin Prottoy, Michelle Tatara, Mehruj Kamal
+
+#### Contributions: 
+We all are responsible for overall project and  review each other work but we each will focus on specific view such as Admin View, Instructor View, and Student View.  
+
+Mezbahuddin- Student View 
+
+Michelle- Instructor View 
+
+Mehruj- Admin View (handles the enrollment and approval for enrollment process which bridges between both views) 
+
 #### Navigating our Website.
 In navigating our websites there are three types of user that can access the website. They are Student,Teacher, and Admin. Student and teachers can sign up and login through the homepage of our signup and login page. Teacher has their own signup page that they can register through with the use of the Teacher button that directs them to Teacher registration form. Once registration is complete you can now sign in to Teacher or Student homepage depending on the type of user you are. You can not sign up as an Admin and is only given a set username of admin and password of user for the Admin account. Their role is to see the database of all registration and login activity of student and teachers at the moment. The choice of database management we have used for this project is mongoDB. 
 #### Student View:
